@@ -141,3 +141,30 @@ To start and run the local development server,
   ```
 
 4. Navigate to Home page [http://localhost:5000](http://localhost:5000)
+
+### Test the functionality of this project
+
+If you clone this repo,
+
+1. Initialize and activate a virtualenv:
+    ```
+    $ virtualenv -p python3 venv
+    ```
+2. Install the dependencies:
+    ```
+    $ pip install -r requirements.txt
+    ```
+
+3. Make migrations:
+    ```
+    $ flask db init
+    $ flask db migrate
+    $ flask db upgrate
+    ```
+
+4. Run the development server:
+    ```
+    $ python3 app.py
+    ```
+
+5. Navigate to Home page 
